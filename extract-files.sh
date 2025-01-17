@@ -66,7 +66,7 @@ function blob_fixup() {
             sed -i 's/ril.dds.call.ongoing/vendor.calls.slot_id/g' "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service)
-            ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
+            grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
     esac
 }
