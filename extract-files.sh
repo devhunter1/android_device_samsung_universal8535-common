@@ -65,6 +65,9 @@ function blob_fixup() {
         vendor/lib64/libsec-ril.so)
             sed -i 's/ril.dds.call.ongoing/vendor.calls.slot_id/g' "${2}"
             ;;
+        vendor/bin/hw/android.hardware.security.keymint-service)
+            ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
+            ;;
     esac
 }
 

@@ -229,6 +229,14 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster4_1support.vendor:64
+    
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.xml \
+    android.hardware.security.keymint-V2-ndk.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
+    android.hardware.security.secureclock-V1-ndk.vendor \
+    android.hardware.security.sharedsecret-V1-ndk.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
