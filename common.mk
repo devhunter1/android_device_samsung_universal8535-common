@@ -237,7 +237,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.rkp-V3-ndk.vendor \
     android.hardware.security.secureclock-V1-ndk.vendor \
     android.hardware.security.sharedsecret-V1-ndk.vendor
-    
+
 # VNDK
 PRODUCT_PACKAGES += \
     libcrypto-v33.so

@@ -65,7 +65,7 @@ function blob_fixup() {
         vendor/lib64/libsec-ril.so)
             sed -i 's/ril.dds.call.ongoing/vendor.calls.slot_id/g' "${2}"
             ;;
-        vendor/bin/hw/android.hardware.security.keymint-service)
+        vendor/bin/hw/android.hardware.security.keymint-service|vendor/lib64/libskeymint10device.so|vendor/lib64/libskeymint_cli.so)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ${PATCHELF} --replace-needed libcrypto.so libcrypto-v33.so "${2}"
             ;;
