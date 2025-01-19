@@ -173,6 +173,16 @@
             <instance>internal/0</instance>
         </interface>
     </hal>
+        <hal format="hidl">
+        <name>android.hardware.renderscript</name>
+        <transport arch="32+64">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDevice/default</fqname>
+    </hal>
     <hal format="hidl" override="true">
         <name>vendor.samsung.hardware.security.drk</name>
         <transport>hwbinder</transport>

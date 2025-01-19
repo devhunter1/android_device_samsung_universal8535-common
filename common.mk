@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
     
 # Camera
 TARGET_BUILD_APERTURE_CAMERA := true
+
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
     
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
