@@ -38,5 +38,144 @@
         <version>4</version>
         <fqname>IPower/default</fqname>
     </hal>
-    
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.bluetooth.audio</name>
+        <fqname>ISehBluetoothAudioProviderFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung_slsi.telephony.hardware.oemservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOemService/dm0</fqname>
+        <fqname>@1.0::IOemService/dm1</fqname>
+        <fqname>@1.0::IOemService/pst</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.engmode</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehEngmode</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
+        <fqname>ISehHyPer/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.drm</name>
+        <version>1</version>
+        <fqname>IDrmFactory/widevine</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.vaultkeeper</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehVaultKeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>vendor.samsung_slsi.hardware.radio</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.snap</name>
+        <fqname>ISehSnap/default</fqname>
+        <fqname>ISehSnap/secsnap</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.security.fkeymaster</name>
+        <fqname>ISehFkeymaster/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.security.widevine.keyprov</name>
+        <version>1</version>
+        <fqname>ISehWidevineKeyProv/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.network</name>
+        <version>1</version>
+        <interface>
+            <name>ISehRadioNetwork</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.channel</name>
+        <version>1</version>
+        <interface>
+            <name>ISehRadioChannel</name>
+            <instance>imsd</instance>
+            <instance>imsd2</instance>
+            <instance>epdgd</instance>
+            <instance>epdgd2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.bridge</name>
+        <version>1</version>
+        <interface>
+            <name>ISehRadioBridge</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.data</name>
+        <version>1</version>
+        <interface>
+            <name>ISehRadioData</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.sim</name>
+        <version>1</version>
+        <interface>
+            <name>ISehRadioSim</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.messaging</name>
+        <version>1</version>
+        <interface>
+            <name>ISehRadioMessaging</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+    <name>vendor.samsung.hardware.tlc.iccc</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+        <name>ISehIccc</name>
+        <instance>default</instance>
+    </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.tlc.kg</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ISehKg</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.wifi</name>
+        <transport>hwbinder</transport>
+        <version>2.3</version>
+        <interface>
+            <name>ISehWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
